@@ -41,7 +41,8 @@ int main(){
   fprintf(stderr, "\nchunk p3 from %p to %p", p3,  (unsigned char *)p3+malloc_usable_size(p3));
   fprintf(stderr, "\nchunk p4 from %p to %p", p4, (unsigned char *)p4+malloc_usable_size(p4));
   fprintf(stderr, "\nchunk p5 from %p to %p\n", p5,  (unsigned char *)p5+malloc_usable_size(p5));
-
+  printf("sizeof p1 %ld\n", sizeof(p1));
+ 
   memset(p1,'A',real_size_p1);
   memset(p2,'B',real_size_p2);
   memset(p3,'C',real_size_p3);
